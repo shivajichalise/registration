@@ -1,0 +1,213 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.container {
+  width: 50%;
+  margin: auto;
+  overflow: hidden;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #151515;
+}
+
+header {
+  padding-top: 5px;
+  min-height: 70px;
+  text-align: center;
+}
+
+header a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #484848;
+  font-weight: bold;
+}
+
+header li {
+  display: inline;
+  padding: 0px 20px 0px 20px;
+}
+
+header #branding h1 {
+  font-family: 'Abril Fatface', cursive;
+  color: #282828;
+  letter-spacing: 2px;
+  /* font-family: 'Amatic SC', cursive; */
+  font-size: 55px;
+  margin: 0px 0px 10px 0px;
+}
+
+
+header a:hover{
+  color:#202020;
+  font-weight:bold;
+}
+
+nav {
+  border-bottom: #505050 1px solid;
+  border-top: #505050 1px solid;
+}
+
+#about {
+  margin-top: 10px;
+}
+
+#myimg{
+  width: 38%;
+  float: left;
+}
+
+#ab{
+  width: 59%;
+  float: right;
+  margin: 0;
+}
+
+#landscape {
+  width: 57%;
+  float: right;
+  margin-top: 10px;
+}
+
+#ab2 {
+  float: left;
+  width: 40%;
+  margin: 10px 5px 0px 0px;
+  text-align: right;
+}
+
+footer {
+  padding-top: 7px;
+  min-height: 20px;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #484848;
+  font-weight: bold;
+}
+
+footer a:hover{
+  color:#202020;
+  font-weight:bold;
+}
+
+footer li {
+  display: inline;
+  padding: 0px 0px 0px 0px;
+}
+
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 0px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+#contactimg {
+  width: 100%;
+  margin-top: 10px;
+}
+
+#contacttbl {
+  margin-top: 10px;
+  padding: 10px;
+}
+
+#buttontd {
+  float: right;
+}
+
+button{
+  background-color: #404040;
+  border: none;
+  color: #ffffff;
+  padding: 12px 29px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 13px;
+  margin: 5px 12px;
+  cursor: pointer;
+  float: right;
+}
+
+button:hover {
+   background-color: #151515;
+}
+
+textarea {
+  min-height: 150px;
+  height: 100%;
+  width: 100%;
+  resize: none;
+}
+
+td {
+  width: 645px;
+}
+
+#posts {
+  width: 45%;
+  float: left;
+}
+
+#blogimg {
+  width: 45%;
+  float: right;
+}
+
+article h1{
+  text-align: center;
+}
+
+/* Media Queries */
+@media(max-width: 768px){
+  .container{
+    width: 75%;
+  }
+
+  header #branding,
+  header nav,
+  header nav li,
+  #myimg,
+  #ab, #landscape, #links{
+    float:none;
+    text-align:center;
+    width:100%;
+  }
+}
+
+@media(max-width: 640px){
+  .container{
+    width: 85%;
+  }
+
+  footer li {
+    display: inline;
+    padding: 0px 20px 0px 10px;
+  }
+
+  header #branding h1 {
+    letter-spacing: 2px;
+    font-size: 25px;
+  }
+}
+
