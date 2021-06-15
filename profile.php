@@ -26,7 +26,7 @@ if(!isset($_SESSION['loggedin'])){
 
 <section id="about">
     <div class="container">
-      <img src="images/mypic.jpg" alt="" srcset="" id="myimg">
+      <img src="" name="profilePic" alt="" srcset="" id="myimg">
       <p id="ab">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at est risus. Ut finibus dictum
         suscipit.
         Aliquam sagittis suscipit sodales. Phasellus ipsum ex, laoreet a augue quis, ultricies pellentesque est. Donec
@@ -42,5 +42,16 @@ if(!isset($_SESSION['loggedin'])){
         tristique arcu tortor, in porttitor nisl luctus ut. Vivamus eget auctor elit. Etiam et dictum est.</p>
     </div>
 </section>
+
+<script>
+var imgArr = ["b&w1.jpg","b&w2.jpg","b&w3.jpg","b&w4.jpg","b&w5.jpg","b&w6.jpg","b&w7.jpg", "b&w8.jpg", "b&w9.jpg"];
+
+function displayImg(){
+    var num = Math.floor(Math.random() * (imgArr.length));
+    document.getElementById("myimg").src="./images/"+imgArr[num];
+}
+
+window.onload = displayImg;
+</script>
 
 <?php include "./htmls/htmlb.html" ?>
